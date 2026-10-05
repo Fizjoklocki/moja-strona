@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222222;
+}
+
+/* Górne menu */
+
+nav {
+    background-color: #222222;
+    color: white;
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+/* Główna część */
+
+#start {
+    text-align: center;
+    padding: 120px 20px;
+}
+
+#start h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#start p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Przycisk */
+
+.przycisk {
+    background-color: #222222;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Pozostałe sekcje */
+
+section {
+    padding: 80px 10%;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#omnie {
+    background-color: white;
+}
+
+#kontakt {
+    background-color: #222222;
+    color: white;
+}
+
+#kontakt h2 {
+    color: white;
+}
+.zdjecie {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+/* Wygląd strony na telefonie */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    #start {
+        padding: 80px 20px;
+    }
+
+    #start h1 {
+        font-size: 36px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .zdjecie {
+        width: 200px;
+        height: 200px;
+    }
+}
